@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+</head>
+
+<body>
+  <div class="main-body">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand text-white" href="{% url 'home' %}">MS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links active" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'resume' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'about' %}">About</a>
+          </li>
+
+        </ul>
+      </div>
+  </nav>
+  <hr>
+
+  <!-- projects section -->
+  <div class="row text-center">
+    <div class="col">
+      <h3 id="proj-head">My Projects</h3>
+    </div>
+  </div>
+
+  <div class="project">
+    <h4 class="proj-name">KNOWLEDGE HUB</h4>
+    <p>A Discussion Forum where anyone can ask relevant questions and
+      users having related knowledge can answer that. Every post indicates
+      number of likes and views. A lot more functionalities are included
+      like Humanize, Markdown for better user experience.</p>
+    <p><i class="fa fa-link mr-2 text-primary" aria-hidden="true"></i><a href="https://github.com/Shoaib0023/Knowledge-Hub">Github Link</a></p>
+    <p>Built by : <span class="badge badge-light ml-2">Django</span>
+                 <span class="badge badge-light">Ajax</span>
+                 <span class="badge badge-light">Python</span>
+                 <span class="badge badge-light">Javascript</span>
+                 <span class="badge badge-light">Bootstrap</span>
+                 <span class="badge badge-light">Pillow</span>
+                 <span class="badge badge-light">Markdown</span></p>
+  </div><hr>
+
+  <div class="project">
+    <h4 class="proj-name">TASK BOOK</h4>
+    <p>A book that handles your things todo . Build with Django REST
+       Framework and ReactJS as frontend with Token Authentication.</p>
+    <p><i class="fa fa-link mr-2 text-primary" aria-hidden="true"></i>
+      <a href="https://github.com/Shoaib0023/task-book">Github Link</a></p>
+    <p>Built by : <span class="badge badge-light ml-2">Django REST</span>
+                 <span class="badge badge-light">Django</span>
+                 <span class="badge badge-light">Python</span>
+                 <span class="badge badge-light">React</span>
+                 <span class="badge badge-light">Redux</span>
+                 <span class="badge badge-light">API</span>
+                 <span class="badge badge-light">Ajax</span>
+                 <span class="badge badge-light">Javascript</span>
+                 <span class="badge badge-light">Bootstrap</span></p>
+  </div><hr>
+
+  <div class="project">
+    <h4 class="proj-name">SHOW-WEATHER</h4>
+    <p>Weather forecast using Open-Weather-Map Api</p>
+    <p><i class="fa fa-link mr-2 text-primary" aria-hidden="true"></i>
+      <a href="https://github.com/Shoaib0023/Show-Weather">Github Link</a></p>
+    <p>Built by : <span class="badge badge-light ml-2">Django</span>
+                 <span class="badge badge-light">REST Api</span>
+                 <span class="badge badge-light">Python</span>
+                 <span class="badge badge-light">Ajax</span>
+                 <span class="badge badge-light">Javascript</span>
+                 <span class="badge badge-light">Bootstrap</span>
+                <span class="badge badge-light">HTML</span>
+               <span class="badge badge-light">CSS</span></p>
+  </div><hr>
+
+  <div class="project">
+    <h4 class="proj-name">Role Playing Game</h4>
+    <p>A RPG in which a player should exit the house which is invaded by aliens .</p>
+    <p><i class="fa fa-link mr-2 text-primary" aria-hidden="true"></i>
+      <a href="https://github.com/Shoaib0023/Role-playing-game">Github Link</a></p>
+    <p>Built by : <span class="badge badge-light ml-2">Python</span>
+                 <span class="badge badge-light">OOPs</span></p>
+  </div><hr>
+  <!-- /projects section -->
+
+  <div class="row text-center social-icons">
+    <div class="col">
+      &copy2019 Shoaib. All rights reserved
+    </div>
+  </div>
+
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

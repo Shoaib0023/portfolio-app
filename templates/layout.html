@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+</head>
+
+<body>
+
+  <div class="main-body">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand text-white" href="{% url 'home' %}">MS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link head-links active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'resume' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link head-links" href="{% url 'about' %}">About</a>
+          </li>
+
+        </ul>
+      </div>
+  </nav>
+  <hr>
+
+<!-- Introduction Section -->
+<div class="res-about mt-5">
+
+  <div class="row justify-content-around">
+    <div class="col-md-11">
+      <h4><b>About Me</b></h4>
+
+      <div class="about-me mt-4">
+        <p>Dedicated and efficient full stack developer seeking a opportunity in software development world. Highly poised and dedicated with strong education and training in development and programming languages.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="res-edu row justify-content-center">
+  <!-- <div class="col-md-2"></div> -->
+
+  <div class="col-md-4 mb-5">
+    <h4 id="edu-heading"><b>Education</b></h4>
+  </div>
+
+  <!-- <div class="col-md-2"></div> -->
+
+  <div class="col-md-6 resume-inner">
+    <div class="col resume-row">
+        <span class="badge badge-light mb-3 resume-date">2016-2020</span>
+        <h4 class="resume-study">Bachelor Degree in Computer Science</h4>
+        <p class="resume-text">
+        Rajkiya Engineering College, Kannauj <br/>
+        <span id="grades">CGPA - 7.8 / 10 </span>
+      </p><br/>
+    </div>
+
+    <div class="col resume-row">
+        <span class="badge badge-light mb-3 resume-date">2013-2015</span>
+        <h4 class="resume-study">Senior Secondary Certificate</h4>
+        <p class="resume-text">
+          Dayawati Modi Public School, Modinagar<br/>
+          <span id="grades">87 %</span>
+        </p><br/>
+    </div>
+
+    <div class="col resume-row">
+        <span class="badge badge-light mb-3 resume-date">2011-2013</span>
+        <h4 class="resume-study">High School Certificate</h4>
+        <p class="resume-text">
+          Dayawati Modi Public School, Modinagar<br/>
+          <span id="grades">70 %</span>
+        </p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="res-exp row justify-content-center">
+  <!-- <div class="col-md-2"></div> -->
+
+  <div class="col-md-4 mb-5">
+    <h4 id="exp-heading"><b>Experience</b></h4>
+  </div>
+
+  <!-- <div class="col-md-2"></div> -->
+
+  <div class="col-md-6 resume-inner">
+    <div class="col resume-row">
+        <span class="badge badge-light mb-3 resume-date">Sep. 2019-Nov. 2019</span>
+        <h4 class="resume-study">Full Stack Developer at Apli.ai</h4>
+        <p class="resume-text">
+          Produced high impact, user friendly website that accomplished business goals.
+          Managed both backend and frontend aspects of the development process.<br/>
+        </p><br/>
+    </div>
+
+  </div>
+</div>
+
+<div class="res-skills">
+
+  <div class="row justify-content-around">
+    <div class="col-md-11">
+      <h4><b>Skills</b></h4>
+
+      <!-- SKILL 2 -->
+      <div class="res-skilltitle-2">
+        <h6>Web Development<span class="float-right">80%</span></h6>
+      </div>
+
+      <div class="skillbar-2"></div>
+      <!-- /SKILL 2 -->
+
+      <!-- SKILL 5 -->
+      <div class="res-skilltitle-5 mt-4">
+        <h6>Software Development<span class="float-right">70%</span></h6>
+      </div>
+
+      <div class="skillbar-5"></div>
+      <!-- /SKILL 5 -->
+
+      <!-- SKILL 1 -->
+      <div class="res-skilltitle-1 mt-4">
+        <h6>Python<span class="float-right">75%</span></h6>
+      </div>
+
+      <div class="skillbar-1"></div>
+      <!-- /SKILL 1 -->
+
+      <!-- SKILL 3 -->
+      <div class="res-skilltitle-3 mt-4">
+        <h6>Javascript<span class="float-right">70%</span></h6>
+      </div>
+
+      <div class="skillbar-3"></div>
+      <!-- /SKILL 3 -->
+
+      <!-- SKILL 4 -->
+      <div class="res-skilltitle-4 mt-4">
+        <h6>Github<span class="float-right">85%</span></h6>
+      </div>
+
+      <div class="skillbar-4"></div>
+      <!-- /SKILL 4 -->
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row text-center mt-5">
+  <div class="col mt-5">
+    <a href="#"><i class="fa fa-facebook mr-4 mr-md-5 text-white" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin mr-4 mr-md-5 text-white" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/home"><i class="fa fa-twitter mr-4 mr-md-5 text-white" aria-hidden="true"></i></a>
+    <a href="https://github.com/Shoaib0023"><i class="fa fa-github mr-4 mr-md-5 text-white" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-instagram mr-4 mr-md-5 text-white" aria-hidden="true"></i></a>
+  </div>
+</div>
+<hr>
+
+<div class="row text-center social-icons">
+  <div class="col">
+    &copy2019 Shoaib. All rights reserved
+  </div>
+</div>
+
+
+</div>
